@@ -13,15 +13,13 @@ import java.util.*;
  */
 public class Scratch {
     public static void main(String[] args) {
-        Car mycar = new Car();
-        //Truck mytruck = new Truck();
-        
-        System.out.println(mycar);
-        mycar.m1();
-        mycar.m2();
-        //System.out.println(mytruck);
-        //mytruck.m1();
-        //mytruck.m2();
+        Moo[] elements = {new Blue(), new Moo(), new Shoe(), new Flute()};
+        for (int i = 0; i < elements.length; i++) {
+            elements[i].method2();
+            elements[i].method1();
+            System.out.println(elements[i]);
+            System.out.println();
+        }
     }
 
       
